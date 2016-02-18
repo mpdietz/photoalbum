@@ -128,7 +128,7 @@ map.addLayer(layer)
     animate: true,
     duration: 2
 
-var image = image;
+// var image = image;
 
     $(".myButton").click(function() {
         map.panTo($(this).element-url, panOptions); 
