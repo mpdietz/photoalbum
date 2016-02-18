@@ -16,6 +16,16 @@ p {
   font-family: sans-serif;
    margin: 15px;
 }
+
+button {
+      width: 200px;
+      height: 73px;
+      margin-bottom: 50px;
+      font-size: 24px;
+      border-radius: 20px;
+      margin-right: 10px;
+    }
+
 .header {
   background-color: lightblue;
   padding: 5px;
@@ -28,6 +38,15 @@ p {
   height: 50px;
 }
 
+#Map {
+      width: 65%;
+      height: 500px;
+      background-color: gray;
+    }
+
 img{
+
+  width: "300"; 
+  height:"300";
  }
 }
