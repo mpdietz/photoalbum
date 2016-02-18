@@ -85,16 +85,6 @@ galleyimages.forEach(function(galleryimages.url) {
     $('#galleyitem').append('<div class ="galleryimg">' + '<img src = "url">' + '</div>');
   });
 
- var layer = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
-	attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
-});
-
- var map = L.map('map').setView([40.753239,-73.981247], 13);
-
-
-var image = image;
-
-
 $(function () {
 
         $('.gallery img').hover(function() {
@@ -110,13 +100,11 @@ $(function () {
 
     });
 
+ var layer = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+  attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
+});
 
-// $('img[src]').hover(function()
-// 		{
-// 		$(this.data[src]).fadeIn("slow");
-// 		},
-// 		function ()
-// 			{
-// 		$(this.data[src]).fadeOut();		
-// 			});
-// });
+ var map = L.map('map').setView([40.753239,-73.981247], 13);
+
+
+var image = image;
