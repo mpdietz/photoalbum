@@ -106,11 +106,8 @@
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
 });
 
-var map = L.map('map', {
-  scrollWheelZoom: false,
-  center: [40.7127837, -74.0059413],
-  zoom: 6
-});
+  var map = L.map('myMap').setView([40.7127837, -74.0059413], 11);
+
 
 map.addLayer(layer)
 
