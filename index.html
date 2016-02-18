@@ -10,15 +10,67 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
- <link rel="stylesheet" href="css/style.css">   
- 
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
-<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+<style type="text/css">
+
+h1 {
+   font-family: "Helvitica", Helvitica, sans-serif;
+   margin: 15px;
+   text-align: center;
+}
+h2 {
+   font-family: "Helvitica", Helvitica, sans-serif;
+   margin: 15px;
+}
+h3 {
+  font-family: "Helvitica", Helvitica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+p {
+  font-family: sans-serif;
+   margin: 15px;
+}
+
+button {
+      width: 200px;
+      height: 73px;
+      margin-bottom: 50px;
+      font-size: 24px;
+      border-radius: 20px;
+      margin-right: 10px;
+    }
+
+.header {
+  background-color: lightblue;
+  padding: 5px;
+  border-radius: 10px;
+}
+#imgheader {
+  background-image: url('http://trulydietz.com/home/wp-content/uploads/2016/01/imgheader.jpg');
+ background-color: steelblue;
+  width: 100%;
+  height: 50px;
+}
+
+#Map {
+      width: 65%;
+      height: 500px;
+      background-color: gray;
+    }
+
+.galleryimg{
+
+  width: "300"; 
+  height:"300";
+ }
+}
+}
+  </style>
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-
 </head>
 
 <body>
@@ -37,23 +89,25 @@ The various images below are photos taken on Tricia various travels.
 </div>
 <Div class = "header">
 </Div>
-<div id =table1>
+<div id table1>
 <table style="width:100%">
     <tr>
 
-      <td>
-        <div id="Map">
-        </div>
-      </td>
+        <td>
+          <div id="Map">
+          </div>
+        </td>
     </tr>
      
-     <tr>
-        <Span id =  "DisplayText"> <h3> Display Text </h3> </Span>
-        <Div id = "galleryitem" ></div>
-  </tr>
+    <tr>
+        <td>
+          <!-- <Span id =  "DisplayText"> <h3> Display Text </h3> </Span> -->
+          <Div id = "galleryitem" ></div>
+        </td>
+    </tr>
 </div>
 </div>
-<script src="js/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script src="js/script.js"></script>
 <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 
