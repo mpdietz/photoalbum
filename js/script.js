@@ -79,9 +79,10 @@
   }
 
 var galleyimages = [BrooklynBridge, CentralPark, Gaustavino, LowerEastSide, DelancyStreet, PublicArt, Skyline, Subway, MoveableChairs, Sunset]; 
+  console.log(galleyimages);
 
-galleyimages.forEach(function(item) {
-    $('#galleyitem').data('url');
+galleyimages.forEach(function(galleryimages.url) {
+    $('#galleyitem').append('<div class ="galleryimg">' + '<img src = "url">' + '</div>');
   });
 
  var layer = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
