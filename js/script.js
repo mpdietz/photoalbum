@@ -88,7 +88,7 @@ var galleryimages = L.marker(element.geolocation).addTo(map);
 
 $(function () {
 
-        $('.gallery img').hover(function() {
+        $('.galleryitem img').hover(function() {
            $(this).fadeTo(500,.2)
 
         }, 
@@ -101,20 +101,6 @@ $(function () {
 
     });
 
-$(function () {
-
-        $('.gallery img').hover(function() {
-           $(this).fadeTo(500,.2)
-
-        }, 
-        function() {
-           $(this).fadeTo(500,1)
-
-        });
-
-         $('#DisplayText h3').text($(this).parent().data('title')); 
-
-    });
 
  var layer = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
   attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
@@ -130,6 +116,6 @@ map.addLayer(layer)
 
 // var image = image;
 
-    $(".myButton").click(function() {
+    $('.galleryitem img').click(function() {
         map.panTo($(this).element-url, panOptions); 
     });
