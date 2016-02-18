@@ -80,7 +80,7 @@
 var galleyimages = [BrooklynBridge, CentralPark, Gaustavino, LowerEastSide, DelancyStreet, PublicArt, Skyline, Subway, MoveableChairs, Sunset]; 
   console.log(galleyimages.CentralPark);
 
-galleyimages.forEach(function(galleryimages.url) {
+galleyimages.forEach(function(galleryimages) {
     $('#galleyitem').append('<div class ="galleryimg">' + '<img src = (element.url)>' + '</div>');
 var galleryimages = L.marker(element.geolocation).addTo(map);
     marker.bindPopup( element.title)
